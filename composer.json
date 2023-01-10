@@ -1,0 +1,12 @@
+{
+    "name": "cscfuto/promise-adaobi-project-xss-mitigator",
+    "description": "Mitigate xss attacks by combining html purification technology and request sanitization technology",
+    "autoload": {
+        "psr-4": {
+            "Promise\\ProjectXssMitigator\\": "src/"
+        }
+    },
+    "require": {
+        "ezyang/htmlpurifier": "^4.16"
+    }
+}

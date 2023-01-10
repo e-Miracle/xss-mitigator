@@ -1,5 +1,7 @@
 <?php
+namespace CssFuto\ProjectXssMitigator\View;
 
+use CssFuto\ProjectXssMitigator\Purifier\Purifier;
 
 class View
 {
@@ -15,7 +17,7 @@ class View
 
         if (is_readable($view))
         {
-            return (new Promise\ProjectXssMitigator\Purifier\Purifier())->purify($this->generateView($view, $params));
+            return (new Purifier())->purify($this->generateView($view, $params));
         }else{
             throw new \Exception("404 PAGE NOT FOUND", 404);
         }

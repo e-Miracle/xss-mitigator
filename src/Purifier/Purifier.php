@@ -1,5 +1,5 @@
 <?php
-namespace Promise\ProjectXssMitigator\Purifier;
+namespace CssFuto\ProjectXssMitigator\Purifier;
 
 use HTMLPurifier;
 use HTMLPurifier_Config;

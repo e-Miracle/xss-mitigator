@@ -3,7 +3,7 @@
     "description": "Mitigate xss attacks by combining html purification technology and request sanitization technology",
     "autoload": {
         "psr-4": {
-            "Promise\\ProjectXssMitigator\\": "src/"
+            "CssFuto\\ProjectXssMitigator\\": "src/"
         }
     },
     "require": {

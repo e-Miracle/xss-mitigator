@@ -1,12 +1,11 @@
 <?php
-namespace CssFuto\ProjectXssMitigator\View;
-
+namespace CssFuto\ProjectXssMitigator\Template;
 use CssFuto\ProjectXssMitigator\Purifier\Purifier;
 
 class View
 {
     /**
-     * @throws Exception
+     * @throws \Exception
      */
     public function render($view, $params = []): string
     {
@@ -15,6 +14,8 @@ class View
             $view = str_replace(".", "/", $view);
         }
 
+        //$view = str_replace('\\', '/', dirname(__DIR__, 3).'/'.$view.'.php');
+        $view = getcwd().'/'.$view.'.php';
         if (is_readable($view))
         {
             return (new Purifier())->purify($this->generateView($view, $params));
